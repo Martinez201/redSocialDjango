@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'red_social.social',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
