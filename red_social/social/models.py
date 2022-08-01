@@ -7,6 +7,7 @@ from django.utils import timezone
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE) #relaciona tablas similar a symfony o hibernate
+    image = models.ImageField(default='batman.png')
 
     def __str__(self):
         return f'Perfil de {self.user.username}'
